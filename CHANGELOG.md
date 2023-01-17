@@ -1,3 +1,8 @@
+## 0.2.0
+
+- Migrated to dart 2.13 with null safety
+- The source code has been migrated to null safety. Thanks to the author of this work, Guy McLean (https://github.com/guymclean).
+
 ## 0.1.4
 
 - Added support for conditional variables
