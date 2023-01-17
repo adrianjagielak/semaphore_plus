@@ -72,7 +72,7 @@ abstract class Semaphore {
     }
 
     _currentCount--;
-    if (_waitQueue.length > 0) {
+    if (_waitQueue.isNotEmpty) {
       _currentCount++;
       var completer = _waitQueue.removeFirst();
       completer.complete();

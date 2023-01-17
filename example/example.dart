@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:semaphore/semaphore.dart';
 
-Future main() async {
+Future<void> main() async {
   var maxCount = 3;
-  var running = 0;
+  var running = <int>[];
   var simultaneous = 0;
   var sm = new LocalSemaphore(maxCount);
   var tasks = <Future>[];
@@ -12,14 +12,14 @@ Future main() async {
     tasks.add(new Future(() async {
       try {
         await sm.acquire();
-        running++;
-        if (simultaneous < running) {
-          simultaneous = running;
+        running.add(i);
+        if (simultaneous < running.length) {
+          simultaneous = running.length;
         }
 
         print("Start $i, running $running");
         await _doWork(100);
-        running--;
+        running.remove(i);
         print("End   $i, running $running");
       } finally {
         sm.release();
