@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/semaphore_plus.svg)](https://pub.dartlang.org/packages/semaphore_plus)
 
-Semaphore is lightweight data type that is used for controlling the cooperative access to a common resource inside the isolate.
+Semaphore is a lightweight data type that is used for controlling the cooperative access to a common resource inside the isolate.
 
 This package is a continuation of the original [semaphore](https://pub.dev/packages/semaphore) package which was marked as discontinued by it's author due to the personal reasons.
 

@@ -1,6 +1,6 @@
 name: semaphore_plus
-version: 0.3.0
-description: Semaphore is lightweight data type that is used for controlling the cooperative access to a common resource inside the isolate.
+version: 0.3.1
+description: Semaphore is a lightweight data type that is used for controlling the cooperative access to a common resource inside the isolate.
 repository: https://github.com/adrianjagielak/semaphore_plus
 
 environment:

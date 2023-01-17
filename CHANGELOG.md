@@ -1,3 +1,7 @@
+## 0.3.1
+
+- Updated package description.
+
 ## 0.3.0
 
 - Published again under the name [semaphore_plus].
