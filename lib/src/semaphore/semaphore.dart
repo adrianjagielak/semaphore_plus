@@ -1,4 +1,4 @@
-part of '../../semaphore.dart';
+part of '../../semaphore_plus.dart';
 
 /// Global semaphore is a named semaphore with max count of permits equals to 1.
 class GlobalSemaphore extends Semaphore {
@@ -34,10 +34,6 @@ abstract class Semaphore {
   final Queue<Completer> _waitQueue = Queue<Completer>();
 
   Semaphore._internal(this.maxCount, [this.name]) {
-    if (maxCount == null) {
-      throw ArgumentError.notNull('maxCount');
-    }
-
     if (maxCount < 1) {
       throw RangeError.value(maxCount, 'maxCount');
     }

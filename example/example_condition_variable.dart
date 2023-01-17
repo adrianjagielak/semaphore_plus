@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:collection';
 import 'dart:math';
-import 'package:semaphore/lock.dart';
-import 'package:semaphore/condition_variable.dart';
+import 'package:semaphore_plus/lock.dart';
+import 'package:semaphore_plus/condition_variable.dart';
 
 Future<void> main() async {
   await Future.wait([

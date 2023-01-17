@@ -1,12 +1,10 @@
-# semaphore
+# semaphore_plus
 
-This package is no longer supported because it was flagged by Google Dart developers as being published by an unknown person.  
-Publisher Unknown.  
-As a normal person, I believe that hardly anyone would want to use software from unknown publishers.  
-
-Version: 0.2.1
+[![pub package](https://img.shields.io/pub/v/semaphore_plus.svg)](https://pub.dartlang.org/packages/semaphore_plus)
 
 Semaphore is lightweight data type that is used for controlling the cooperative access to a common resource inside the isolate.
+
+This package is a continuation of the original [semaphore](https://pub.dev/packages/semaphore) package which was marked as discontinued by it's author due to the personal reasons.
 
 ### Examples:
 
@@ -15,7 +13,7 @@ Semaphore example:
 ```dart
 import 'dart:async';
 
-import 'package:semaphore/semaphore.dart';
+import 'package:semaphore_plus/semaphore_plus.dart';
 
 Future<void> main(List<String> args) async {
   final maxCount = 3;
@@ -83,8 +81,8 @@ Conditional variables example:
 import 'dart:async';
 import 'dart:collection';
 import 'dart:math';
-import 'package:semaphore/lock.dart';
-import 'package:semaphore/condition_variable.dart';
+import 'package:semaphore_plus/lock.dart';
+import 'package:semaphore_plus/condition_variable.dart';
 
 Future<void> main() async {
   await Future.wait([

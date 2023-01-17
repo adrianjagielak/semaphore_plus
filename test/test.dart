@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:semaphore/semaphore.dart';
+import 'package:semaphore_plus/semaphore_plus.dart';
 import 'package:test/test.dart';
 
 void main() {

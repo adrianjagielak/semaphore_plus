@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:semaphore/semaphore.dart';
+import 'package:semaphore_plus/semaphore_plus.dart';
 
 Future<void> main(List<String> args) async {
   final maxCount = 3;
