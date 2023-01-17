@@ -1,7 +1,9 @@
 name: semaphore
-version: 0.0.1
+version: 0.1.0
 author: Andrew Mezoni <andrew.mezoni@gmail.com>
 description: Semaphore is lightweight data type that is used for controlling access to a common resource inside isolate.
 homepage: https://github.com/mezoni/semaphore
+environment:
+  sdk: '>=2.0.0 <3.0.0'
 dev_dependencies:
-  test: any
+  test: 1.3.2

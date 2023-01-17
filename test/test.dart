@@ -23,7 +23,7 @@ void main() {
     var s2 = new GlobalSemaphore("semaphore_test");
     expect(s1, s2, reason: "Global semaphores are not equal");
     //
-    var list = [];
+    var list = <Future>[];
     for (var i = 0; i < 3; i++) {
       Future f(Semaphore s, List l) async {
         try {
@@ -60,7 +60,7 @@ void main() {
 
     var s1 = new LocalSemaphore(1);
     var s2 = new LocalSemaphore(1);
-    var list = [];
+    var list = <Future>[];
     for (var i = 0; i < 3; i++) {
       Future f(Semaphore s, List l) async {
         try {
@@ -80,7 +80,7 @@ void main() {
   });
 
   test("Local semaphore max count", () async {
-    var list1 = [];
+    var list1 = <Future>[];
     var maxCount = 3;
     Future action(List list, int milliseconds) {
       expect(list.length <= maxCount, true, reason: "Not exlusive start");
@@ -96,7 +96,7 @@ void main() {
     }
 
     var s1 = new LocalSemaphore(3);
-    var list = [];
+    var list = <Future>[];
     for (var i = 0; i < maxCount * 2; i++) {
       Future f(Semaphore s, List l) async {
         try {
