@@ -1,5 +1,3 @@
-library semaphore;
-
 import 'dart:async';
 import 'dart:collection';
 

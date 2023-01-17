@@ -1,4 +1,4 @@
-part of semaphore;
+part of '../../semaphore.dart';
 
 /// Global semaphore is a named semaphore with max count of permits equals to 1.
 class GlobalSemaphore extends Semaphore {
