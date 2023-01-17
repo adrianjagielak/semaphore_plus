@@ -1,3 +1,7 @@
+## 0.1.3
+
+- Fixed source code according to `pub.dev` health suggestions
+
 ## 0.1.2
 
 - Fixed source code according to `pub.dev` health suggestions

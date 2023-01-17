@@ -31,15 +31,15 @@ abstract class Semaphore {
 
   int _currentCount = 0;
 
-  Queue<Completer> _waitQueue = Queue<Completer>();
+  final Queue<Completer> _waitQueue = Queue<Completer>();
 
   Semaphore._internal(this.maxCount, [this.name]) {
     if (maxCount == null) {
-      throw ArgumentError.notNull("maxCount");
+      throw ArgumentError.notNull('maxCount');
     }
 
     if (maxCount < 1) {
-      throw RangeError.value(maxCount, "maxCount");
+      throw RangeError.value(maxCount, 'maxCount');
     }
   }
 
@@ -60,7 +60,7 @@ abstract class Semaphore {
   /// Releases a permit, returning it to the semaphore.
   void release() {
     if (_currentCount == 0) {
-      throw StateError("Unable to release semaphore");
+      throw StateError('Unable to release semaphore');
     }
 
     _currentCount--;

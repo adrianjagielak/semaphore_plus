@@ -17,10 +17,10 @@ Future<void> main(List<String> args) async {
           simultaneous = running.length;
         }
 
-        print("Start $i, running $running");
+        print('Start $i, running $running');
         await _doWork(100);
         running.remove(i);
-        print("End   $i, running $running");
+        print('End   $i, running $running');
       } finally {
         sm.release();
       }
@@ -28,7 +28,7 @@ Future<void> main(List<String> args) async {
   }
 
   await Future.wait(tasks);
-  print("Max permits: $maxCount, max simultaneous runned: $simultaneous");
+  print('Max permits: $maxCount, max simultaneous runned: $simultaneous');
 }
 
 Future _doWork(int ms) {
